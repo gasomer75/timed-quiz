@@ -99,13 +99,13 @@ body {
     height: 75%;
 }
 
-/* .question {
+.question {
     padding: 10px 75px;
     color: darkblue;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
-} */
+}
 
 .answers {
     padding: 5px 75px;
