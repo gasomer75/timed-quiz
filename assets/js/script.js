@@ -1,4 +1,8 @@
+
+var timerEl = document.getElementById('timer');
+
 // main elements
+var hsEl = document.getElementById('high-scores');
 var mainEl = document.getElementById('main');
 var titleEl = document.getElementById('title');
 var questionEl = document.getElementById('question');
@@ -6,6 +10,15 @@ var intro1 = document.getElementById('p1');
 var intro2 = document.getElementById('p2');
 var intro3 = document.getElementById('p3');
 var intro4 = document.getElementById('p4');
+
+// header elements
+var hsLink = document.createElement('href', highScores);
+var hsName = document.createTextNode('High Scores');
+hsLink.setAttribute('class', 'scores');
+hsLink.appendChild(hsName);
+hsEl.appendChild(hsLink);
+
+hsEl.addEventListener('click', highScores);
 
 // questions
 var questionArr = [
@@ -54,6 +67,32 @@ function landingPage() {
   mainEl.appendChild(startButton);
 
   startButton.addEventListener('click', startQuiz);
+};
+
+// done - working
+function countDown(seconds) {
+    var elapsedTime = seconds;
+
+    var timeInterval = setInterval(function() {
+
+        if (elapsedTime >= 0) {
+            timerEl.textContent = 'Time Remaining: ' + elapsedTime;
+            elapsedTime--
+        
+        } else {
+            clearInterval(timeInterval)
+            var outOfTime = document.createElement('h1');
+            outOfTime.setAttribute('class', 'title');
+            outOfTime.textContent = "TIME'S UP!!";
+            mainEl.textContent = "";
+            mainEl.appendChild(outOfTime);
+        }
+    }, 1000);   
+};
+
+function highScores() {
+    titleEl.textContent = "High Scores";
+    
 }
 
 function startQuiz() {};

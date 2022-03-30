@@ -32,6 +32,11 @@ body {
     color: rgb(67, 105, 167);
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
+}
+
+.scores:hover {
+    text-decoration: underline;
 }
 
 .timer {
