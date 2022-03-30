@@ -1,7 +1,7 @@
-# Timed Coding Quiz Assignment
+# Timed Coding Quiz
 
 ## Link:
-https://placeholder.com
+https://gasomer75.github.io/timed-quiz/
 
 ## Purpose
 
