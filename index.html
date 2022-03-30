@@ -8,7 +8,44 @@
     <title>Timed Coding Quiz</title>
 </head>
 <body>
-    
+    <div class="quiz-container">
+        
+        <header class="stats">
+            <div id="high-scores" class="scores">
+                View High Scores
+            </div>
+            <div id="timer" class="timer">
+                <!-- countdown timer will appear here when quiz starts -->
+            </div>           
+        </header>  
+
+        <main id="main" class="main">
+            <h1 id="title" class="title">
+                <!-- Intro or Question title -->
+            </h1>     
+            <p id="question" class="question">
+               <!-- Questions will insert here -->
+            </p>
+            <p id="p1" class="intro"></p>
+            <p id="p2" class="intro"></p>
+            <p id="p3" class="intro"></p>
+            <p id="p4" class="intro"></p>
+            <p id="p5" class="intro"></p>
+            
+        </main>
+
+        <footer id="results" class="results">
+            <div class="results-list">
+                <div class="result correct">1. <span> &#10004;</span></div>
+                <div class="result wrong">2. <span> &#10006;</span></div>
+                <div class="result wrong">3. <span> &#10006;</span></div>
+                <div class="result correct">4. <span> &#10004;</span></div>
+                <div class="result correct">5. <span> &#10004;</span></div>
+            </div>
+        </footer>
+
+    </div>
+  
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
